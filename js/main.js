@@ -155,7 +155,6 @@ resetRestaurants = (restaurants) => {
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
   const ul = document.getElementById('restaurants-list');
-  //console.log(restaurants);
   restaurants.forEach(restaurant => {
     ul.append(createRestaurantHTML(restaurant));
   });
@@ -172,7 +171,6 @@ createRestaurantHTML = (restaurant) => {
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   image.alt = "Restaurant specific image";
-  console.log(DBHelper.imageUrlForRestaurant());
   li.append(image);
 
   const name = document.createElement('h1');
@@ -191,7 +189,7 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.tabIndex = 3;
-  li.append(more);
+  li.append(more)
 
   return li
 }
