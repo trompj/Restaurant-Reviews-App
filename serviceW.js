@@ -2,6 +2,8 @@
 //01/04/2019
 //Service worker javascript page for restaurant reviews application
 //to cache files/pages for use without network functionality.
+//Developers.google.com was used in conjunction with Udacity to
+//ensure functionality of service worker.
 
 let SW_Cache_Name = 'v1';
 let urlsCached = [
