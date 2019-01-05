@@ -1,3 +1,8 @@
+/*Justin Tromp
+//01/04/2019
+//Style page for Restaurant Reviews App
+/*
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -14,7 +19,7 @@ body {
 }
 ul, li {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
+  font-size: .7em;
   color: #333;
 }
 a {
@@ -141,12 +146,13 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px 5px;
+  margin: 15px 3%;
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
   width: 80%;
   max-width: 370px;
+  display: inline-block;
 }
 
 
@@ -217,7 +223,7 @@ nav h1 a {
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 1.3em;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
@@ -247,7 +253,7 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 5px 10px;
-  width: 100%;
+  width: 94%;
 }
 #reviews-container {
   padding: 30px 10px 80px;
@@ -321,9 +327,10 @@ nav h1 a {
 }
 
 @media screen and (min-width: 1000px) {
+
   .inside #map-container {
     height: 87%;
-    position: fixed;
+    position: absolute;
     top: 80px;
     width: 50%;
   }
@@ -342,7 +349,7 @@ nav h1 a {
   #restaurant-container, #reviews-container {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #fff;
-    padding: 140px 40px 30px;
+    padding: 6em 20px 30px;
     width: 50%;
   }
   #reviews-container {
@@ -373,4 +380,42 @@ nav h1 a {
   nav h1 a {
     font-size: 1.1em;
   }
+
+    #footer {
+    font-size: .7em;
+  }
+
+}
+
+
+@media screen and (min-width: 2000px) {
+  
+  nav h1 a {
+    font-size: 1.5em;
+  }
+
+  #restaurant-name {
+    font-size: 2em;
+  }
+
+  #restaurant-cuisine {
+    font-size: 1.6em;
+  }
+
+  #restaurant-address {
+    font-size: 1.4em;
+  }
+
+  body, td, th, p {
+    font-size: 1.3em;
+  }
+
+  #breadcrumb {
+    font-size: 27px;
+  }
+
+  #footer {
+    font-size: 1em;
+  }
+
 }

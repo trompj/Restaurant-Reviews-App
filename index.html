@@ -1,3 +1,10 @@
+<!--Justin Tromp
+****01/04/2019
+****Main restaurant .html page (homepage) for Restaurant Reviews App.
+****Provides overview of restaurants and allows users to choose
+****one for more information.
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -23,10 +30,10 @@
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select role="button" tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select role="tab list" tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select role="button" tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select role="tab list" tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>

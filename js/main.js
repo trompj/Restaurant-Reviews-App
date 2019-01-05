@@ -1,3 +1,8 @@
+//Justin Tromp
+//01/04/2019
+//Main javascript page for restaurant reviews application.
+
+
 let restaurants,
   neighborhoods,
   cuisines
@@ -6,12 +11,24 @@ var markers = []
 
 //Service worker for caching the pages and images for offline accessibility.
 if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/serviceW.js').then(function(registration) {
+      //Registration of service worker was successful
+      console.log('Service Worker registration was successful with scope: ', registration.scope);
+    }, function(err) {
+      //Registration of service worker has failed
+      console.log('Service Worker registration failed: ', err);
+    });
+  });
+}
+
+/*
   navigator.serviceWorker
-      .register('/js/serviceWorker.js')
+      .register('/serviceW.js')
       .catch(function(error) {
         console.error(error);
       });
-}
+}*/
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
