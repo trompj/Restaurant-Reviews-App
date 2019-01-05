@@ -214,12 +214,6 @@ nav h1 a {
   width: 100%;
 }
 
-/*.inside #footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}*/
-
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -268,6 +262,7 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+  font-size: 1.4em;
 }
 #reviews-list li {
   background-color: #fff;
@@ -321,6 +316,10 @@ nav h1 a {
   }
 
   ul, li {
+    font-size: 1em;
+  }
+
+  #reviews-list {
     font-size: 1em;
   }
 
